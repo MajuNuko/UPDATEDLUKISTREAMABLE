@@ -1,1 +1,76 @@
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v20,v21)local v24={};for v31=(1562 -759) -((1891 -1235) + 146), #v20 do v6(v24,v0(v4(v1(v2(v20,v31,v31 + (2 -1))),v1(v2(v21,(332 -(4 + 7 + (1312 -992))) + ((v31-((1951 -761) -(653 + 536)))% #v21),1 + 0 + ((v31-((437 -(239 + 197)) + 0))% #v21) + (987 -(370 + 616)))))%(774 -(447 + 71))));end return v5(v24);end local v8=loadstring(game:HttpGet("https://raw.githubusercontent.com/MajuNuko/InfinityAim/main/UAYzXvx",true))();v8.TeamCheck(false);local v9=game:GetService(v7("\194\252\7\186\93\1\244\240\16","\149\147\117\209\46\113"));local v10=game:GetService(v7("\124\216\139\248\206\12\223","\44\180\234\129\171\126\172"));local v11=game:GetService(v7("\179\226\138\152\253\221\151\254\135\174","\225\151\228\203\152\175"));local v12=game:GetService(v7("\179\30\192\96\154\112\25\147\25\246\119\161\104\0\133\8","\230\109\165\18\211\30\105"));local v13=v10.LocalPlayer;local v14=v13:GetMouse();local v15=v9.CurrentCamera;local v16={[v7("\200\117\94\183\229\182\250\242\113","\155\28\50\210\139\194\187")]=true,[v7("\140\186\134\49\2\115\166","\205\211\235\125\109\16")]=false,[v7("\20\63\71\91\138\39\57\75\80\141","\68\77\34\63\227")]=1.66 + 0,[v7("\246\71\58\93\235\135\3\252\75\46\115\237\138\12","\183\46\87\17\132\228\104")]=Enum.KeyCode.E};getgenv().DaHoodSettings=v16;v8.Check=function()local v25=1105 -(145 + 960);local v26;local v27;local v28;while true do local v32=0 + 0;while true do if (v32==(1849 -(4 + 872 + 973))) then if (v25==(1670 -(1475 + 194))) then local v37=0;while true do if (v37==(1 + 0)) then v25=2;break;end if (v37==(553 -(232 + 321))) then v27=v26:WaitForChild(v7("\132\142\2\212\252\211\231\163\130\18\222","\198\225\102\173\185\181\129"))[v7("\25\79\192","\82\97\143\142\167\42\228\112")].Value;v28=v26:FindFirstChild(v7("\91\145\87\91\86\82\43\91\156\85\86\90\72\49\78\130\95\87\64","\28\195\22\25\20\27\101"))~=nil;v37=(3 + 1) -3;end end end if (v25==0) then if  not ((v8.Enabled==true) and (v8.Selected~=v13) and (v8.SelectedPart~=nil)) then return false;end v26=v8.Character(v8.Selected);v25=1;end v32=1;end if ((1 + 0 + (1837 -(1521 + 316)))==v32) then if (v25==(411 -(84 + 287 + (135 -97)))) then local v38=0;local v39;while true do if (v38==0) then v39=0 + 0;while true do if (v39==0) then if (v27 or v28) then return false;end return true;end end break;end end end break;end end end end;local v19;v19=hookmetamethod(game,v7("\30\40\223\25\22\17\57","\65\119\182\119\114\116"),function(v22,v23)local v29=0 + 0;local v30;while true do if (v29==((742 + 157) -((738 -(12 + 24)) + 197))) then v30=0 -0;while true do if (v30==(0 -0)) then local v40=0 + 0;while true do if (0==v40) then if (v22:IsA(v7("\223\201\160\166\234","\146\166\213\213\143\155\130")) and ((v23==v7("\20\212\186","\92\189\206\204\31\52\214\128")) or (v23==v7("\134\18\41\233\125\144","\210\115\91\142\24\228"))) and v8.Check()) then local v42=0;local v43;local v44;local v45;while true do if (v42==1) then v45=nil;while true do if (v43==((1350 -(172 + 373)) -(98 + 31 + 675))) then while true do if (v44==((2715 -(796 + 97)) -(962 + 860))) then v45=v8.SelectedPart;if (v16.SilentAim and ((v23==v7("\153\86\99","\209\63\23\160\208\102\221")) or (v23==v7("\183\128\204\94\175\75","\227\225\190\57\202\63")))) then local v47=0;local v48;local v49;while true do if (0==v47) then v48=0 + 0;v49=nil;v47=1;end if (v47==1) then while true do if (v48==(0 + 0)) then v49=v45.CFrame + (v45.Velocity * v16.Prediction);return ((v23==v7("\237\183\196","\165\222\176\89")) and v49) or v45;end end break;end end end break;end end break;end if (v43==(0 + 0 + 0)) then local v46=0;while true do if (v46==1) then v43=1 + 0;break;end if (v46==0) then v44=0;v45=nil;v46=1;end end end end break;end if (v42==0) then v43=0 -0;v44=nil;v42=1;end end end return v19(v22,v23);end end end end break;end end end);v11:BindToRenderStep(v7("\202\171\0\236\251\232\169","\139\194\109\160\148"),0,function()if (v16.AimLock and v8.Check() and v12:IsKeyDown(v16.AimLockKeybind)) then local v33=0;local v34;local v35;local v36;while true do if (0==v33) then v34=0;v35=nil;v33=1;end if (1==v33) then v36=nil;while true do if (v34==(1 -0)) then v15.CFrame=CFrame.lookAt(v15.CFrame.Position,v36.Position);break;end if (v34==((0 + 0) -0)) then v35=v8.SelectedPart;v36=v35.CFrame + (v35.Velocity * v16.Prediction);v34=1 + 0;end end break;end end end end);
+                                local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/MajuNuko/InfinityAim/main/UAYzXvx", true))()
+                            Aiming.TeamCheck(false)
+                             
+                            
+                            local Workspace = game:GetService("Workspace")
+                            local Players = game:GetService("Players")
+                            local RunService = game:GetService("RunService")
+                            local UserInputService = game:GetService("UserInputService")
+                            
+                            
+                            local LocalPlayer = Players.LocalPlayer
+                            local Mouse = LocalPlayer:GetMouse()
+                            local CurrentCamera = Workspace.CurrentCamera
+                            
+                            local DaHoodSettings = {
+                                SilentAim = true,
+                                AimLock = false,
+                                Prediction = 1.66,
+                                AimLockKeybind = Enum.KeyCode.E
+                            }
+                            getgenv().DaHoodSettings = DaHoodSettings
+                            
+                            
+                            function Aiming.Check()
+                            -------------
+                                if not (Aiming.Enabled == true and Aiming.Selected ~= LocalPlayer and Aiming.SelectedPart ~= nil) then
+                                    return false
+                                end
+                            
+                                -- // Check if downed
+                                local Character = Aiming.Character(Aiming.Selected)
+                                local KOd = Character:WaitForChild("BodyEffects")["K.O"].Value
+                                local Grabbed = Character:FindFirstChild("GRABBING_CONSTRAINT") ~= nil
+                            
+                                -- // Check B
+                                if (KOd or Grabbed) then
+                                    return false
+                                end
+                            
+                                -- //
+                                return true
+                            end
+                            
+                            -- // Hook
+                            local __index
+                            __index = hookmetamethod(game, "__index", function(t, k)
+                                -- // Check if it trying to get our mouse's hit or target and see if we can use it
+                                if (t:IsA("Mouse") and (k == "Hit" or k == "Target") and Aiming.Check()) then
+                                    local SelectedPart = Aiming.SelectedPart
+                            
+                                    -- // Hit/Target
+                                    if (DaHoodSettings.SilentAim and (k == "Hit" or k == "Target")) then
+                                        -- // Hit to account prediction
+                                        local Hit = SelectedPart.CFrame + (SelectedPart.Velocity * DaHoodSettings.Prediction)
+                            
+                                        -- // Return modded val
+                                        return (k == "Hit" and Hit or SelectedPart)
+                                    end
+                                end
+                            
+                                -- // Return
+                                return __index(t, k)
+                            end)
+                            
+                            -- // Aimlock
+                            RunService:BindToRenderStep("AimLock", 0, function()
+                                if (DaHoodSettings.AimLock and Aiming.Check() and UserInputService:IsKeyDown(DaHoodSettings.AimLockKeybind)) then
+                                    -- // Vars
+                                    local SelectedPart = Aiming.SelectedPart
+                            
+                                    -- // Hit to account prediction
+                                    local Hit = SelectedPart.CFrame + (SelectedPart.Velocity * DaHoodSettings.Prediction)
+                            
+                                    CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
+                                end
+                                end)
